@@ -112,10 +112,10 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 
     }
 
-    //MAIN
-    public static void main(String arv[]) {
-        launch(arv);
-    }
+////    //MAIN
+////    public static void main(String arv[]) {
+////        launch(arv);
+////    }
 
     
     //EVENTOS

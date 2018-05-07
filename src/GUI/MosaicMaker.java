@@ -597,11 +597,7 @@ public class MosaicMaker extends Application implements EventHandler<ActionEvent
                 c.setStroke(Color.SIENNA);
             }
         } catch (Exception e) {
-            alert = new Alert(Alert.AlertType.WARNING);
-            alert.setTitle("Alert");
-            alert.setHeaderText("Incorrect date");
-            alert.getDialogPane().setPrefSize(200, 100);
-            alert.showAndWait();
+         
 
         }
     }
@@ -631,10 +627,10 @@ public class MosaicMaker extends Application implements EventHandler<ActionEvent
             }
 
         } catch (Exception ex) {
-            alert = new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText("INCORREC DATE");
-            alert.getDialogPane().setPrefSize(200, 100);
-            alert.showAndWait();
+//            alert = new Alert(Alert.AlertType.ERROR);
+//            alert.setHeaderText("INCORREC DATE");
+//            alert.getDialogPane().setPrefSize(200, 100);
+//            alert.showAndWait();
         }
 
         return input;
@@ -722,11 +718,11 @@ public class MosaicMaker extends Application implements EventHandler<ActionEvent
 
             });
         } catch (Exception e) {
-            alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Alert");
-            alert.setHeaderText("Incorrect date");
-            alert.getDialogPane().setPrefSize(200, 100);
-            alert.showAndWait();
+//            alert = new Alert(Alert.AlertType.ERROR);
+//            alert.setTitle("Alert");
+//            alert.setHeaderText("Incorrect date");
+//            alert.getDialogPane().setPrefSize(200, 100);
+//            alert.showAndWait();
         }
 
     }
