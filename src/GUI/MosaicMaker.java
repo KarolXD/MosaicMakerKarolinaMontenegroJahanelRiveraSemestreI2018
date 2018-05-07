@@ -5,7 +5,7 @@
  */
 package GUI;
 
-import Main.Main;
+import Main.JavaFxApplications;
 import domain.Beans;
 import data.MosaicFile;
 import java.awt.image.BufferedImage;
@@ -497,7 +497,8 @@ public class MosaicMaker extends Application implements EventHandler<ActionEvent
     /*Este método dibuja las lineas*/
     private void drawShapesCanvas11(GraphicsContext gc, int withLiness) {
         try {
-
+           // gc = canvas.getGraphicsContext2D();
+            //chooseColor(gc);
             gc.setStroke(Color.BLACK);
             gc.setLineWidth(3);//ancho de las lineas
 
@@ -513,11 +514,7 @@ public class MosaicMaker extends Application implements EventHandler<ActionEvent
             }
             pane.getChildren().add(root);//añadimos el componente root al pane
         } catch (NumberFormatException e) {
-            alert = new Alert(Alert.AlertType.WARNING);
-            alert.setTitle("Alert");
-            alert.setHeaderText("Incorrect date");
-            alert.getDialogPane().setPrefSize(200, 100);
-            alert.showAndWait();
+
         }
     }
 
@@ -977,7 +974,7 @@ public class MosaicMaker extends Application implements EventHandler<ActionEvent
 
             ggc = canvas2.getGraphicsContext2D();
             chooseColor(ggc);
-            ggc.setLineWidth(3);
+           // ggc.setLineWidth(3);
 
             this.imageView = new ImageView(this.writableImage);
             this.image = imageView.snapshot(null, writableImage);
